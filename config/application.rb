@@ -34,5 +34,8 @@ module PeriodicTable
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Whitelist host
+    config.hosts << "3000-teal-capybara-j7qfoj5p.ws-us03.gitpod.io"
   end
 end
