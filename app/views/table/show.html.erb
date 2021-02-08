@@ -1,0 +1,10 @@
+<% content_for :title do %>
+  <h1><%= @element["name"] %></h1>
+<% end %>
+
+<%= content_tag :div,
+  id: 'element_data',
+  'data-elements': @element.to_json do %>
+<% end %>
+
+<%= javascript_pack_tag 'table_show' %>
