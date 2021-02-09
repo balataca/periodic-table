@@ -1,6 +1,7 @@
 import React from 'react'
 import { parseDetail } from './detailParser'
 import { Item } from './styles'
+import propTypes from './propTypes'
 
 const DetailItem = ({ item: [ title, detail ]}) => {
   return (
@@ -10,5 +11,7 @@ const DetailItem = ({ item: [ title, detail ]}) => {
     </Item>
   )
 }
+
+DetailItem.propTypes = propTypes
 
 export default DetailItem
