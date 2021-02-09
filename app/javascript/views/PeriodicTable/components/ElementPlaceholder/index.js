@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from './propTypes'
 
 import { Placeholder } from './styles'
 
@@ -8,8 +9,10 @@ const ElementPlaceholder = ({ children, column, row, backgroundColor }) => {
       column={column}
       row={row}
       backgroundColor={backgroundColor}
-  >{children}</Placeholder>
+    >{children}</Placeholder>
   )
 }
+
+ElementPlaceholder.propTypes = propTypes
 
 export default ElementPlaceholder
