@@ -4,13 +4,13 @@ export const Item = styled.li`
   padding: 5px;
   color: #fff;
   background-color: ${({ backgroundColor }) => backgroundColor};
+  grid-row: ${({ row }) => row};
+  grid-column: ${({ column }) => column};
   border: 2px solid #313435;
   list-style: none;
   
-  ${({ primary }) => primary && css`
+  ${({ clickable }) => clickable && css`
     cursor: pointer;
-    grid-column: ${({ column }) => column};
-    grid-row: ${({ row }) => row};
     transition: all .2s ease-in-out;
 
     &:hover {

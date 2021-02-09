@@ -11,20 +11,20 @@ const PeriodicTable = ({ elements }) => {
         <Element
           key={elements[name].number}
           element={elements[name]}
-          primary={true}
+          clickable={true}
         />
       ))}
   
       <Series/>
 
       <ElementPlaceholder column="3" row="6" backgroundColor="#402c17">
-          <span>Lanthanide Group</span>
-          <span>57-71</span>
+        <span>Lanthanide Group</span>
+        <span>57-71</span>
       </ElementPlaceholder>
 
       <ElementPlaceholder column="3" row="7" backgroundColor="#732e4c">
-          <span>Actinid Group</span>
-          <span>89-103</span>
+        <span>Actinid Group</span>
+        <span>89-103</span>
       </ElementPlaceholder>
     </Table>
   )

@@ -9,7 +9,7 @@ import {
   AtomicMass,
 } from './styles'
 
-const Element = ({ element, primary, large }) => {
+const Element = ({ element, clickable, large }) => {
   const handleClick = () => {
     window.location.href = `/table/${element.name.toLowerCase()}`
   }
@@ -19,9 +19,9 @@ const Element = ({ element, primary, large }) => {
       column={element.xpos}
       row={element.ypos}
       backgroundColor={getColor(element.category)}
-      primary={primary}
+      clickable={clickable}
       large={large}
-      onClick={primary && handleClick}
+      onClick={clickable && handleClick}
     >
       <AtomicNumber>{element.number}</AtomicNumber>
       <Symbol>{element.symbol}</Symbol>
