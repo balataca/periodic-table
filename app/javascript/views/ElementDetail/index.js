@@ -16,11 +16,13 @@ const ElementDetail = ({ element }) => {
     window.location.href = '/table'
   }
 
-  const detailItems = () => (
-    Object.entries(element).filter(([key, value]) => (
-        key !== 'summary' && key !== 'xpos' && key !== 'ypos' && value
+  const detailItems = () => {
+    const excludedKeys = ['summary', 'xpos', 'ypos']
+
+    return Object.entries(element).filter(([key, value]) => (
+      !excludedKeys.includes(key) && value
     ))
-  )
+  }
 
   return (
     <Container className='container'>
