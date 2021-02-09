@@ -1,5 +1,6 @@
 import React from 'react'
 import { getColor } from '../../utils/categories'
+import propTypes from './propTypes'
 
 import {
   Item,
@@ -30,5 +31,7 @@ const Element = ({ element, clickable, large }) => {
     </Item>
   )
 }
+
+Element.propTypes = propTypes
 
 export default Element;
