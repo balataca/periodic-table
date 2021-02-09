@@ -1,4 +1,5 @@
 import React from 'react'
+import { elements } from '../../propTypes'
 
 import Element from '../../../../components/Element'
 
@@ -14,6 +15,10 @@ const Elements = ({ elements }) => {
       ))}
     </>
   )
+}
+
+Element.propTypes = {
+  elements
 }
 
 export default Elements
