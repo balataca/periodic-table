@@ -1,2 +1,6 @@
 ports:
   - port: 3000
+
+vscode:
+  extensions:
+    - jpoissonnier.vscode-styled-components@1.5.0:NW+sYHi2vMBkmIuiABFSmQ==
