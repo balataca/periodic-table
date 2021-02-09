@@ -3,6 +3,7 @@ import Elements from './components/Elements'
 import Series from './components/Series'
 import ElementPlaceholder from './components/ElementPlaceholder'
 import { Table } from './styles'
+import propTypes from './propTypes';
 
 const PeriodicTable = ({ elements }) => {
   return (
@@ -11,12 +12,12 @@ const PeriodicTable = ({ elements }) => {
   
       <Series/>
 
-      <ElementPlaceholder column="3" row="6" backgroundColor="#402c17">
+      <ElementPlaceholder column={3} row={6} backgroundColor="#402c17">
         <span>Lanthanide Group</span>
         <span>57-71</span>
       </ElementPlaceholder>
 
-      <ElementPlaceholder column="3" row="7" backgroundColor="#732e4c">
+      <ElementPlaceholder column={3} row={7} backgroundColor="#732e4c">
         <span>Actinid Group</span>
         <span>89-103</span>
       </ElementPlaceholder>
@@ -24,4 +25,6 @@ const PeriodicTable = ({ elements }) => {
   )
 }
 
-export default PeriodicTable;
+PeriodicTable.propTypes = propTypes
+
+export default PeriodicTable
