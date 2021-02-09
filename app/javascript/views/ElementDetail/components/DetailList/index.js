@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from './propTypes'
 
 import DetailItem from '../DetailItem'
 
@@ -11,5 +12,7 @@ const DetailList = ({ items }) => (
     ))}
   </List>
 )
+
+DetailList.propTypes = propTypes
 
 export default DetailList
