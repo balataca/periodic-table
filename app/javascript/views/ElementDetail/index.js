@@ -2,6 +2,7 @@ import React from 'react'
 import Element from '../../components/Element'
 import Icon from '@mdi/react'
 import { mdiCloseCircle } from '@mdi/js'
+import { element } from '../../components/Element/propTypes'
 
 import DetailList from './components/DetailList'
 
@@ -50,6 +51,10 @@ const ElementDetail = ({ element }) => {
       <DetailList items={detailItems()}/>  
     </Container>
   )
+}
+
+ElementDetail.propTypes = {
+  element
 }
 
 export default ElementDetail
