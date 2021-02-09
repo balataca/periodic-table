@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Element from '../../components/Element'
+import Elements from './components/Elements'
 import Series from './components/Series'
 import ElementPlaceholder from './components/ElementPlaceholder'
 import { Table } from './styles'
@@ -7,13 +7,7 @@ import { Table } from './styles'
 const PeriodicTable = ({ elements }) => {
   return (
     <Table columns={18}>
-      {elements.order.map((name) => (
-        <Element
-          key={elements[name].number}
-          element={elements[name]}
-          clickable={true}
-        />
-      ))}
+      <Elements elements={elements}/>
   
       <Series/>
 
